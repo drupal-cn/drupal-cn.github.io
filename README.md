@@ -1,2 +1,3 @@
-# drupal-cn.github.io
-Drupal Note
+# Drupal Development Note
+
+[Drupal Note](notes)

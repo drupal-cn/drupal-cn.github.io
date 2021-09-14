@@ -1,0 +1,12 @@
+[
+    {
+        "title": "附录",
+        "path": "notes/appendices",
+        "children": [
+            {
+                "title": "词汇表",
+                "path": "notes/others/glossary.html"
+            }
+        ]
+    }
+]

@@ -4,6 +4,10 @@
         "path": "notes/appendices",
         "children": [
             {
+                "title": "资源索引",
+                "path": "/"
+            },
+            {
                 "title": "词汇表",
                 "path": "notes/appendices/glossary.html"
             }

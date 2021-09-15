@@ -89,6 +89,33 @@ code {
     font-style: italic;
 }
 
+blockquote {
+    background: #f6f6f9;
+    margin-bottom: 15px;
+    padding: 20px 50px;
+    position: relative;
+}
+
+blockquote:before {
+    color: #e0e0e3;
+    content: '\f10d';
+    font-family: Awesome;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+blockquote:after {
+    color: #e0e0e3;
+    content: '\f10e';
+    font-family: Awesome;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
 input[type="text"] {
     border: 1px solid #e0e0e3;
     border-radius: 3px;

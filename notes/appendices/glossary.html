@@ -10,381 +10,625 @@
 </head>
 <body>
 <main>
-    <article><h1>词汇表</h1>
+    <article>
+        <h1>词汇表</h1>
+
+        <p>本表是<a target="_blank" href="https://www.drupal.org/docs/user_guide/en/glossary.html">官网词汇表</a>的翻译版本。</p>
 
         <h2>A</h2>
 
         <h3>Ajax</h3>
-        <p>A web technology used to exchange data with a server to dynamically update parts of a web page (for example,
-            forms) without needing entire page reloads.</p>
+        <blockquote>
+            A web technology used to exchange data with a server to dynamically update parts of a web page (for
+            example, forms) without needing entire page reloads.
+        </blockquote>
+        <p>一种与服务器交换数据的网页技术，用于实现不刷新整个页面的前提下动态更新部分内容（比如表单）。</p>
 
-        <h3>Alias</h3>
-        <p>A user-friendly name to replace the internal <a href="#path">path</a> that the system assigns to a URL on the
-            site. For example, you might assign an alias of <em>/about</em> to the About page on your site, to replace
-            the internal path <em>/node/5</em>. This would give the page a URL of <em>http://example.com/about</em>
-            instead of <em>http://example.com/node/5</em>. See <a href="/docs/user_guide/en/content-paths.html">Section&nbsp;5.1,
-                “Concept: Paths, Aliases, and URLs”</a> for more information.</p>
+        <h3 id="alias">Alias - 别名</h3>
+        <blockquote>
+            A user-friendly name to replace the internal <a href="notes/appendices/glossary.html#path">path</a>
+            that the system assigns to a URL on the site. For example, you might assign an alias of <em>/about</em> to
+            the About page on your site, to replace the internal path <em>/node/5</em>. This would give the page a URL
+            of <em>http://example.com/about</em> instead of <em>http://example.com/node/5</em>. See <a
+                href="https://www.drupal.org/docs/user_guide/en/content-paths.html">Section&nbsp;5.1,
+            “Concept: Paths, Aliases, and URLs”</a> for more information.
+        </blockquote>
+        <p>一个对用户友好的名字，用来代替系统生成的 URL 路径。比如，你可以为 “关于” 页面指定一个 <em>/about</em> 别名，这样系统自动生成的 URL 将从 <em>http://example.com/node/5</em>
+            变为 <em>http://example.com/about</em>，看起来更清晰明了。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/content-paths.html">第 5.1 章
+            “概念：路径、别名，和 URL”</a>。</p>
 
-        <h3>Anonymous</h3>
-        <p>A person (<a href="#user">user</a>) interacting with the site who is not logged in. See <a
-                href="/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept: Users, Roles, and
-            Permissions”</a> for more information.</p>
+        <h3 id="anonymous">Anonymous - 匿名</h3>
+        <blockquote>
+            A person (<a href="notes/appendices/glossary.html#user">user</a>) interacting with the site who is
+            not logged in. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/user-concept.html">Section&nbsp;7.1,
+            “Concept: Users, Roles, and Permissions”</a> for more information.
+        </blockquote>
+        <p>未登录用户。详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/user-concept.html">第 7.1 章
+            “概念：用户、角色，和权限”</a>。</p>
 
         <h2>B</h2>
 
         <h3>Block</h3>
-        <p>A chunk of <a href="#content">content</a> (text, images, links, etc.) that can be displayed on a page of a
-            site. Blocks are displayed in <a href="#region">regions</a>. See <a
-                    href="/docs/user_guide/en/block-concept.html">Section&nbsp;8.1, “Concept: Blocks”</a> for more
-            information.</p>
+        <blockquote>
+            A chunk of <a href="notes/appendices/glossary.html#content">content</a> (text, images, links, etc.)
+            that can be displayed on a page of a site. Blocks are displayed in <a
+                href="notes/appendices/glossary.html#region">regions</a>.
+            See <a href="https://www.drupal.org/docs/user_guide/en/block-concept.html">Section&nbsp;8.1, “Concept:
+            Blocks”</a> for more information.
+        </blockquote>
+        <p>页面上包含文字、图片、链接等信息的一块内容，以 <a href="notes/appendices/glossary.html#region">Region</a> 形式展示。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/block-concept.html">第 8.1 章
+            “概念：Block”</a>。</p>
 
-        <h3>Breakpoint</h3>
-        <p>Breakpoints are used to separate the height or width of browser screens, printers, and other media output
-            types into steps. A <a href="#responsive">responsive</a> site adjusts its presentation at these breakpoints.
-            See <a href="/docs/user_guide/en/structure-image-responsive.html">Section&nbsp;6.14, “Concept: Responsive
-                Image Styles”</a> for more information.</p>
+        <h3 id="breakpoint">Breakpoint - 断点</h3>
+        <blockquote>
+            Breakpoints are used to separate the height or width of browser screens, printers, and other media output
+            types into steps. A <a href="notes/appendices/glossary.html#responsive">responsive</a> site adjusts its
+            presentation at these breakpoints.
+            See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-image-responsive.html">Section&nbsp;6.14,
+            “Concept: Responsive Image Styles”</a> for more information.
+        </blockquote>
+        <p>用于对显示器、打印机或者其他媒体输出设备的宽高尺寸进行划分，响应式设计页面将在这些断点的位置调整显示规则。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-image-responsive.html">第
+            6.14 章 “概念：响应式图像显示”</a>。</p>
 
         <h3>Bundle</h3>
-        <p>Synonym for <a href="#entity-subtype">Entity subtype</a>.</p>
+        <blockquote>Synonym for <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a>.</blockquote>
+        <p><a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a> 的同义词。</p>
 
         <h2>C</h2>
 
-        <h3>Cache</h3>
-        <p>The site’s internal cache stores the output of time-consuming calculations, such as computing output for an
-            HTML page request, and then retrieves them instead of recalculating the next time they are needed. External
-            caching systems can also be used on the web server to speed up a site’s response. See <a
-                    href="/docs/user_guide/en/prevent-cache.html">Section&nbsp;12.1, “Concept: Cache”</a> for more
-            information on the internal cache.</p>
+        <h3 id="cache">Cache - 缓存</h3>
+        <blockquote>
+            The site’s internal cache stores the output of time-consuming calculations, such as computing output
+            for an HTML page request, and then retrieves them instead of recalculating the next time they are needed.
+            External caching systems can also be used on the web server to speed up a site’s response.
+            See <a href="https://www.drupal.org/docs/user_guide/en/prevent-cache.html">Section&nbsp;12.1, “Concept:
+            Cache”</a> for more information on the internal cache.
+        </blockquote>
+        <p>站点的内部缓存将耗时较多的运算结果储存起来（比如一个 HTML 页面请求），下次遇到同样请求就检索这些结果，而不是重新进行运算。
+            外部缓存系统可用于网页服务器，以提升网站的相应速度。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/prevent-cache.html">第
+            12.1 章 “概念：缓存”</a>。</p>
 
         <h3>CMS</h3>
-        <p>Acronym for <a href="#content-management-system">Content Management System</a>.</p>
+        <blockquote>
+            Acronym for <a href="notes/appendices/glossary.html#content-management-system">Content Management System</a>.
+        </blockquote>
+        <p><a href="notes/appendices/glossary.html#content-management-system">Content Management System</a> 的缩写。</p>
 
-        <h3>Configuration</h3>
-        <p>Information about your site that is not <a href="#content">content</a>, and is meant to be more permanent
-            than <a href="#state">state</a> information, such as the name of your site, the <a href="#content-type">content
-                types</a> and <a href="#view">views</a> you have defined, etc. See <a
-                    href="/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5, “Concept: Types of Data”</a>
-            for more information.</p>
+        <h3 id="configuration">Configuration - 配置</h3>
+        <blockquote>
+            Information about your site that is not <a href="notes/appendices/glossary.html#content">content</a>,
+            and is meant to be more permanent than <a href="notes/appendices/glossary.html#state">state</a> information,
+            such as the name of your site,
+            the <a href="notes/appendices/glossary.html#content-type">content types</a> and <a
+                href="notes/appendices/glossary.html#view">views</a> you have defined, etc. See <a
+                href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5, “Concept:
+            Types of Data”</a> for more information.
+        </blockquote>
+        <p>非<a href="notes/appendices/glossary.html#content">内容</a>类信息，它比<a href="notes/appendices/glossary.html#state">状态</a>信息更持久。
+            比如站名、<a href="notes/appendices/glossary.html#content-type">内容类型</a>，以及<a
+                    href="notes/appendices/glossary.html#view">视图</a>等。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">第
+            1.5 章 “概念：数据类型”</a>。</p>
 
         <h3>Content</h3>
-        <p>Information meant to be displayed on your site, such as text, images, downloads, etc. See also <a
-                href="#configuration">Configuration</a> and <a href="#state">State</a>. See <a
-                href="/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5, “Concept: Types of Data”</a> for
-            more information.</p>
+        <blockquote>
+            Information meant to be displayed on your site, such as text, images, downloads, etc. See also <a
+                href="#configuration">Configuration</a> and <a href="notes/appendices/glossary.html#state">State</a>.
+            See <a href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5, “Concept:
+            Types of Data”</a> for more information.
+        </blockquote>
+        <p>显示在网站的信息，比如文字、图片、下载资源等。另见 <a
+                href="#configuration">Configuration</a> 及 <a href="notes/appendices/glossary.html#state">State</a>。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">第
+            1.5 章 “概念：数据类型”</a>。</p>
 
         <h3>Content item</h3>
-        <p>An item of <a href="#content">content</a> that is typically meant to be displayed as the main content of a
-            page on your site. This is an <a href="#entity-type">entity type</a>. See <a
-                    href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept: Content Entities and
-                Fields”</a> for more information.</p>
+        <blockquote>
+            An item of <a href="notes/appendices/glossary.html#content">content</a> that is typically meant to be
+            displayed as the main content of a page on your site. This is an <a
+                href="notes/appendices/glossary.html#entity-type">entity type</a>. See <a
+                href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+            “Concept: Content Entities and Fields”</a> for more information.
+        </blockquote>
+        <p>一项<a href="notes/appendices/glossary.html#content">内容</a>通常是显示在页面上的主要部分，这是一种<a
+                href="notes/appendices/glossary.html#entity-type">实体类型</a>。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            2.3 章 “概念：内容实体和字段”</a>。</p>
 
-        <h3>Content Management System (CMS)</h3>
-        <p>A collection of tools designed to allow the creation, modification, organization, search, retrieval and
-            removal of information on a website. See <a href="/docs/user_guide/en/understanding-drupal.html">Section&nbsp;1.1,
-                “Concept: Drupal as a Content Management System”</a> for more information.</p>
+        <h3>Content Management System</h3>
+        <blockquote>
+            A collection of tools designed to allow the creation, modification, organization, search, retrieval
+            and removal of information on a website. See <a
+                href="https://www.drupal.org/docs/user_guide/en/understanding-drupal.html">Section&nbsp;1.1,
+            “Concept: Drupal as a Content Management System”</a> for more information.
+        </blockquote>
+        <p>一套被设计用于创建、修改、管理、搜索、检索，以及删除信息的工具集合。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            1.1 章 “概念：Drupal 作为内容管理系统”</a>。</p>
 
         <h3>Content type</h3>
-        <p>An <a href="#entity-subtype">entity subtype</a> for the <a href="#content-item">content item</a> <a
+        <blockquote>
+            An <a href="notes/appendices/glossary.html#entity-subtype">entity subtype</a> for the <a
+                href="notes/appendices/glossary.html#content-item">content item</a> <a
                 href="#entity-type">entity type</a>. Each content type is used for some particular purpose on the site,
             and each has its own fields. For example, a site for a farmers market might have a content type for simple
-            pages, and another for a vendor listing page. See <a href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and Fields”</a> for more information.</p>
+            pages, and another for a vendor listing page. See <a
+                href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+            “Concept: Content Entities and Fields”</a> for more information.
+        </blockquote>
+        <p>一个 <a href="notes/appendices/glossary.html#content-item">content item</a> 的 <a
+                href="notes/appendices/glossary.html#entity-type">entity type</a>（实体类型）的子类 <a
+                href="notes/appendices/glossary.html#entity-subtype">entity subtype</a>。每个 content type 都是为一类指定
+            内容创建的，有自己特有的字段。比如，一个站点会针对农贸市场设定一个 content type，而为供应商设定另一个 content type。</p>
 
-        <h3>Contextual link</h3>
-        <p>A link to an administrative page for editing or configuring a feature of the site, shown in the context where
-            that feature is displayed. Example: a link to configure a <a href="#menu">menu</a> that is shown when you
-            hover your mouse over the menu. See <a href="/docs/user_guide/en/config-overview.html">Section&nbsp;4.1,
-                “Concept: Administrative Overview”</a> for more information.</p>
+        <h3 id="contextual link">Contextual link - 上下文链接</h3>
+        <blockquote>
+            A link to an administrative page for editing or configuring a feature of the site, shown in the context
+            where that feature is displayed. Example: a link to configure a <a
+                href="notes/appendices/glossary.html#menu">menu</a> that is shown when you
+            hover your mouse over the menu. See <a
+                href="https://www.drupal.org/docs/user_guide/en/config-overview.html">Section&nbsp;4.1,
+            “Concept: Administrative Overview”</a> for more information.
+        </blockquote>
+        <p>一个显示在内容附近，指向后台编辑或配置页面的链接。比如，一个菜单的配置链接就在鼠标经过后显示。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/config-overview.html">第
+            4.1 章 “概念：内容管理概述”</a>。</p>
 
-        <h3>Contributed</h3>
-        <p><a href="#module">Modules</a>, <a href="#theme">themes</a>, and <a href="#distribution">distributions</a>
-            that are not part of the <a href="#drupal-core">Drupal core</a> download, and that can be downloaded
-            separately from the <a class="ulink" href="https://www.drupal.org" target="_top"><em>Drupal.org</em></a>
-            website.</p>
+        <h3>Contributed - 贡献</h3>
+        <blockquote>
+            <a href="notes/appendices/glossary.html#module">Modules</a>,
+            <a href="notes/appendices/glossary.html#theme">themes</a>, and
+            <a href="notes/appendices/glossary.html#distribution">distributions</a>
+            that are not part of the <a href="notes/appendices/glossary.html#drupal-core">Drupal core</a> download, and
+            that can be downloaded separately from the <a target="_blank" href="https://www.drupal.org">Drupal.org</a>
+            website.
+        </blockquote>
+        <p><a href="notes/appendices/glossary.html#module">模块</a>、<a href="notes/appendices/glossary.html#theme">主题</a>
+            和 <a href="notes/appendices/glossary.html#distribution">发行版</a> 等非
+            <a href="notes/appendices/glossary.html#drupal-core">Drupal 核心</a>内容，
+            可分别从<a target="_blank" href="https://www.drupal.org">官网</a>下载。</p>
 
         <h3>Cron</h3>
-        <p>On some operating systems, <em>cron</em> is a command scheduler application that executes commands or scripts
-            periodically. Your site defines periodic tasks, also known as cron tasks, that need to be triggered either
-            by an operating system cron scheduler, or internally. See <a
-                    href="/docs/user_guide/en/security-cron-concept.html">Section&nbsp;13.1, “Concept: Cron”</a> for
-            more information.</p>
+        <blockquote>
+            On some operating systems, <em>cron</em> is a command scheduler application that executes commands
+            or scripts periodically. Your site defines periodic tasks, also known as cron tasks, that need to be
+            triggered either by an operating system cron scheduler, or internally. See
+            <a href="https://www.drupal.org/docs/user_guide/en/security-cron-concept.html">Section&nbsp;13.1,
+                “Concept: Cron”</a> for more information.
+        </blockquote>
+        <p>部分操作系统中，<em>cron</em> 是一个用于定期执行命令或脚本的调度程序。网站上设定的周期性任务就是用这个程序来执行。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/security-cron-concept.html">第
+            13.1 章 “概念：Cron”</a>。</p>
 
         <h2>D</h2>
 
-        <h3>Distribution</h3>
-        <p>A single download that provides a shortcut for setting up a specific type of site, such as a website for a
-            club or for e-commerce. A distribution contains <a href="#drupal-core">Drupal core</a>, along with <a
-                    href="#contributed">contributed</a> <a href="#module">modules</a> and/or <a href="#theme">themes</a>;
+        <h3 id="distribution">Distribution - 发行版</h3>
+        <blockquote>
+            A single download that provides a shortcut for setting up a specific type of site, such as a website
+            for a club or for e-commerce. A distribution contains <a href="notes/appendices/glossary.html#drupal-core">Drupal
+            core</a>, along with <a href="notes/appendices/glossary.html#contributed">contributed</a>
+            <a href="notes/appendices/glossary.html#module">modules</a>
+            and/or <a href="notes/appendices/glossary.html#theme">themes</a>;
             many distributions also pre-configure the site or even create sample content upon installation. See <a
-                    href="/docs/user_guide/en/understanding-distributions.html">Section&nbsp;1.4, “Concept:
-                Distributions”</a> for more information.</p>
+                href="https://www.drupal.org/docs/user_guide/en/understanding-distributions.html">Section&nbsp;1.4,
+            “Concept: Distributions”</a> for more information.
+        </blockquote>
+        <p>为特定类型站点（比如俱乐部或电子商务网站）提供特别设置的一套发行版本。一套发行版包含
+            <a href="notes/appendices/glossary.html#drupal-core">Drupal 核心</a> 以及相关的
+            <a href="notes/appendices/glossary.html#module">模块</a> 和
+            <a href="notes/appendices/glossary.html#theme">主题</a>；许多发行版还对站点做了预设，并在安装时自动创建示例内容。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-distributions.html">第
+            1.4 章 “概念：发行版”</a>。</p>
 
-        <h3>Drupal core</h3>
-        <p>The files, themes, profiles, and modules included with the standard project software download. See <a
-                href="/docs/user_guide/en/understanding-drupal.html">Section&nbsp;1.1, “Concept: Drupal as a Content
-            Management System”</a> for more information.</p>
+        <h3 id="drupal-core">Drupal core - Drupal 核心</h3>
+        <blockquote>
+            The files, themes, profiles, and modules included with the standard project software download. See
+            <a href="https://www.drupal.org/docs/user_guide/en/understanding-drupal.html">Section&nbsp;1.1,
+                “Concept: Drupal as a Content Management System”</a> for more information.
+        </blockquote>
+        <p>包含一个标准项目的主题、框架和模块文件。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-drupal.html">第
+            1.1 章 “概念：Drupal 作为内容管理系统”</a>。</p>
 
         <h2>E</h2>
 
         <h3>Entity</h3>
-        <p>An item of either <a href="#content">content</a> or <a href="#configuration">configuration</a> data, although
-            in common usage, the term often refers to content entities. Examples include <a href="#content-item">content
-                items</a>, custom <a href="#block">blocks</a>, <a href="#taxonomy-term">taxonomy terms</a>, and
-            definitions of <a href="#content-type">content types</a>; the first three are content entities, and the last
-            is a configuration entity. See also <a href="#entity-type">Entity type</a>, <a href="#entity-subtype">Entity
-                subtype</a>, and <a href="#field">Field</a>. See <a href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and Fields”</a> for more information.</p>
+        <blockquote>An item of either <a href="notes/appendices/glossary.html#content">content</a> or <a
+                href="notes/appendices/glossary.html#configuration">configuration</a> data, although
+            in common usage, the term often refers to content entities. Examples include <a
+                    href="notes/appendices/glossary.html#content-item">content
+                items</a>, custom <a href="notes/appendices/glossary.html#block">blocks</a>, <a
+                    href="notes/appendices/glossary.html#taxonomy-term">taxonomy terms</a>, and
+            definitions of <a href="notes/appendices/glossary.html#content-type">content types</a>; the first three are
+            content entities, and the last
+            is a configuration entity. See also <a href="notes/appendices/glossary.html#entity-type">Entity type</a>, <a
+                    href="notes/appendices/glossary.html#entity-subtype">Entity
+                subtype</a>, and <a href="notes/appendices/glossary.html#field">Field</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+                “Concept: Content Entities and Fields”</a> for more information.
+        </blockquote>
 
         <h3>Entity subtype</h3>
-        <p>Within a <a href="#content">content</a> <a href="#entity-type">entity type</a>, a grouping of entities that
-            share the same <a href="#field">fields</a>. For example, within the <a href="#content-item">content item</a>
-            entity type, a farmers market site might have subtypes (known as <a href="#content-type">content types</a>)
+        <blockquote>Within a <a href="notes/appendices/glossary.html#content">content</a> <a
+                href="notes/appendices/glossary.html#entity-type">entity type</a>, a grouping of entities that
+            share the same <a href="notes/appendices/glossary.html#field">fields</a>. For example, within the <a
+                    href="notes/appendices/glossary.html#content-item">content item</a>
+            entity type, a farmers market site might have subtypes (known as <a
+                    href="notes/appendices/glossary.html#content-type">content types</a>)
             for static pages and vendor pages, each with its own group of fields. You may also see the term
             <em>bundle</em> used (especially in programmer documentation) as a synonym of entity subtype. See <a
-                    href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept: Content Entities and
-                Fields”</a> for more information.</p>
+                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+                “Concept: Content Entities and
+                Fields”</a> for more information.
+        </blockquote>
 
         <h3>Entity type</h3>
-        <p>The overall type of an <a href="#entity">entity</a>; in common usage, it is only applied to a <a
-                href="#content">content</a> entity. Examples include <a href="#content-type">content types</a>, <a
-                href="#taxonomy-term">taxonomy terms</a>, and custom <a href="#block">blocks</a>. See <a
-                href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept: Content Entities and
-            Fields”</a> for more information.</p>
+        <blockquote>The overall type of an <a href="notes/appendices/glossary.html#entity">entity</a>; in common usage,
+            it is only applied to a <a
+                    href="#content">content</a> entity. Examples include <a
+                    href="notes/appendices/glossary.html#content-type">content types</a>, <a
+                    href="#taxonomy-term">taxonomy terms</a>, and custom <a href="notes/appendices/glossary.html#block">blocks</a>.
+            See <a
+                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+                “Concept: Content Entities and
+                Fields”</a> for more information.
+        </blockquote>
 
         <h2>F</h2>
 
         <h3>Field</h3>
-        <p>Data of a certain type that is attached to a <a href="#content">content</a> <a href="#entity">entity</a>. For
+        <blockquote>Data of a certain type that is attached to a <a href="notes/appendices/glossary.html#content">content</a>
+            <a href="notes/appendices/glossary.html#entity">entity</a>. For
             instance, on a farmers market site’s vendor content type, you might have fields for an image, the vendor
-            description, and a <a href="#taxonomy-term">taxonomy term</a>. See <a
-                    href="/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept: Content Entities and
-                Fields”</a> for more information.</p>
+            description, and a <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy term</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+                “Concept: Content Entities and
+                Fields”</a> for more information.
+        </blockquote>
 
         <h3>Field bundle</h3>
-        <p>Synonym for <a href="#entity-subtype">Entity subtype</a>.</p>
+        <blockquote>Synonym for <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a>.</blockquote>
 
         <h3>Field formatter</h3>
-        <p><a href="#configuration">Configuration</a> that defines how the data in a <a href="#field">field</a> is
+        <blockquote><a href="notes/appendices/glossary.html#configuration">Configuration</a> that defines how the data
+            in a <a href="notes/appendices/glossary.html#field">field</a> is
             displayed. For example, a text field could be displayed with a prefix and/or suffix, and it could have its
-            HTML tags stripped out or limited. See also <a href="#view-mode">View mode</a> and <a href="#field-widget">Field
-                widget</a>. See <a href="/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10, “Concept:
-                View Modes and Formatters”</a> for more information.</p>
+            HTML tags stripped out or limited. See also <a href="notes/appendices/glossary.html#view-mode">View mode</a>
+            and <a href="notes/appendices/glossary.html#field-widget">Field
+                widget</a>. See <a target="_blank"
+                                   href="https://www.drupal.org/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10,
+                “Concept:
+                View Modes and Formatters”</a> for more information.
+        </blockquote>
 
         <h3>Field widget</h3>
-        <p><a href="#configuration">Configuration</a> that defines how someone can enter or edit data for a <a
-                href="#field">field</a> on a data entry form. For example, a text field could use a single-line or
+        <blockquote><a href="notes/appendices/glossary.html#configuration">Configuration</a> that defines how someone
+            can enter or edit data for a <a
+                    href="#field">field</a> on a data entry form. For example, a text field could use a single-line or
             multi-line entry box, and there could be a setting for the size of the box. See also <a
                     href="#field-formatter">Field formatter</a>. See <a
-                    href="/docs/user_guide/en/structure-widgets.html">Section&nbsp;6.8, “Concept: Forms and Widgets”</a>
-            for more information.</p>
+                    href="https://www.drupal.org/docs/user_guide/en/structure-widgets.html">Section&nbsp;6.8, “Concept:
+                Forms and Widgets”</a>
+            for more information.
+        </blockquote>
 
         <h3>Formatter</h3>
-        <p>See <a href="#field-formatter">Field formatter</a>.</p>
+        <blockquote>See <a href="notes/appendices/glossary.html#field-formatter">Field formatter</a>.</blockquote>
 
         <h3>FOSS</h3>
-        <p>Acronym for <em>Free and Open Source Software</em>, meaning software that is developed by a community of
-            people and released under a non-commercial license. See also <a href="#gpl">GPL</a>. See <a
-                    href="/docs/user_guide/en/understanding-project.html">Section&nbsp;1.6, “Concept: The Drupal
-                Project”</a> for more information.</p>
+        <blockquote>Acronym for <em>Free and Open Source Software</em>, meaning software that is developed by a
+            community of
+            people and released under a non-commercial license. See also <a href="notes/appendices/glossary.html#gpl">GPL</a>.
+            See <a
+                    href="https://www.drupal.org/docs/user_guide/en/understanding-project.html">Section&nbsp;1.6,
+                “Concept: The Drupal
+                Project”</a> for more information.
+        </blockquote>
 
         <h2>G</h2>
 
         <h3>GPL</h3>
-        <p>Acronym for the <em>GNU General Public License</em>, a non-commercial software license. All software
+        <blockquote>Acronym for the <em>GNU General Public License</em>, a non-commercial software license. All software
             downloaded from the <a class="ulink" href="https://www.drupal.org" target="_top"><em>Drupal.org</em></a>
             website is licensed under the <a class="ulink" href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
                                              target="_top">"GNU General Public License, version 2"</a>. See also <a
-                    href="#foss">FOSS</a>. See <a href="/docs/user_guide/en/understanding-gpl.html">Section&nbsp;1.7,
-                “Concept: Drupal Licensing”</a> for more information.</p>
+                    href="#foss">FOSS</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/understanding-gpl.html">Section&nbsp;1.7,
+                “Concept: Drupal Licensing”</a> for more information.
+        </blockquote>
 
         <h2>I</h2>
 
         <h3>Image style</h3>
-        <p>A set of processing steps that transform a base image into a new image; typical processing includes scaling
-            and cropping. See <a href="/docs/user_guide/en/structure-image-styles.html">Section&nbsp;6.12, “Concept:
-                Image Styles”</a> for more information.</p>
+        <blockquote>A set of processing steps that transform a base image into a new image; typical processing includes
+            scaling
+            and cropping. See <a target="_blank"
+                                 href="https://www.drupal.org/docs/user_guide/en/structure-image-styles.html">Section&nbsp;6.12,
+                “Concept:
+                Image Styles”</a> for more information.
+        </blockquote>
 
         <h2>L</h2>
 
         <h3>LAMP</h3>
-        <p>Acronym for <em>Linux, Apache, MySQL, and PHP</em>: the software on the web server that the scripts commonly
+        <blockquote>Acronym for <em>Linux, Apache, MySQL, and PHP</em>: the software on the web server that the scripts
+            commonly
             run on (although it can use other operating systems, web servers, and databases). See <a
-                    href="/docs/user_guide/en/install-requirements.html">Section&nbsp;3.1, “Concept: Server
-                Requirements”</a> for more information.</p>
+                    href="https://www.drupal.org/docs/user_guide/en/install-requirements.html">Section&nbsp;3.1,
+                “Concept: Server
+                Requirements”</a> for more information.
+        </blockquote>
 
         <h3>Log</h3>
-        <p>A list of recorded events on the site, such as usage data, performance data, errors, warnings, and
-            operational information. See <a href="/docs/user_guide/en/prevent-log.html">Section&nbsp;12.4, “Concept:
-                Log”</a> for more information.</p>
+        <blockquote>A list of recorded events on the site, such as usage data, performance data, errors, warnings, and
+            operational information. See <a target="_blank"
+                                            href="https://www.drupal.org/docs/user_guide/en/prevent-log.html">Section&nbsp;12.4,
+                “Concept:
+                Log”</a> for more information.
+        </blockquote>
 
         <h2>M</h2>
 
         <h3>Menu</h3>
-        <p>A set of links used for navigation on a site, which may be arranged in a hierarchy. See <a
-                href="/docs/user_guide/en/menu-concept.html">Section&nbsp;5.6, “Concept: Menu”</a> for more information.
-        </p>
+        <blockquote>A set of links used for navigation on a site, which may be arranged in a hierarchy. See <a
+                href="https://www.drupal.org/docs/user_guide/en/menu-concept.html">Section&nbsp;5.6, “Concept: Menu”</a>
+            for more information.
+        </blockquote>
 
         <h3>Module</h3>
-        <p>Software (usually PHP, JavaScript, and/or CSS) that extends site features and adds functionality. The Drupal
-            project distinguishes between <em><a href="#drupal-core">core</a></em> and <em><a href="#contributed">contributed</a></em>
-            modules. See <a href="/docs/user_guide/en/understanding-modules.html">Section&nbsp;1.2, “Concept:
-                Modules”</a> for more information.</p>
+        <blockquote>Software (usually PHP, JavaScript, and/or CSS) that extends site features and adds functionality.
+            The Drupal
+            project distinguishes between <em><a href="notes/appendices/glossary.html#drupal-core">core</a></em> and
+            <em><a href="notes/appendices/glossary.html#contributed">contributed</a></em>
+            modules. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-modules.html">Section&nbsp;1.2,
+                “Concept:
+                Modules”</a> for more information.
+        </blockquote>
 
         <h2>P</h2>
 
         <h3>Path</h3>
-        <p>The unique, last part of the internal URL that the system assigns to a page on the site, which can be a
+        <blockquote>The unique, last part of the internal URL that the system assigns to a page on the site, which can
+            be a
             visitor-facing page or an administrative page. For example, the internal URL for the About page on your site
             might be <em>http://example.com/node/5</em>, and in this case, the path is <em>node/5</em>. See also <a
-                    href="#alias">Alias</a>. See <a href="/docs/user_guide/en/content-paths.html">Section&nbsp;5.1,
-                “Concept: Paths, Aliases, and URLs”</a> for more information.</p>
+                    href="#alias">Alias</a>. See <a target="_blank"
+                                                    href="https://www.drupal.org/docs/user_guide/en/content-paths.html">Section&nbsp;5.1,
+                “Concept: Paths, Aliases, and URLs”</a> for more information.
+        </blockquote>
 
         <h3>Permission</h3>
-        <p>The ability to perform some action on the site, such as editing a particular type of <a href="#content">content</a>,
-            or viewing user profiles. See also <a href="#role">Role</a>. See <a
-                    href="/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept: Users, Roles, and
-                Permissions”</a> for more information.</p>
+        <blockquote>The ability to perform some action on the site, such as editing a particular type of <a
+                href="notes/appendices/glossary.html#content">content</a>,
+            or viewing user profiles. See also <a href="notes/appendices/glossary.html#role">Role</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept:
+                Users, Roles, and
+                Permissions”</a> for more information.
+        </blockquote>
 
         <h2>R</h2>
 
         <h3>Reference field</h3>
-        <p>A <a href="#field">field</a> that represents a relationship between an <a href="#entity">entity</a> and one
-            or more other entities, which may be the same <a href="#entity-type">entity type</a> or a different type.
+        <blockquote>A <a href="notes/appendices/glossary.html#field">field</a> that represents a relationship between an
+            <a href="notes/appendices/glossary.html#entity">entity</a> and one
+            or more other entities, which may be the same <a href="notes/appendices/glossary.html#entity-type">entity
+                type</a> or a different type.
             For example, on a farmers market site, a recipe content item might have a reference field to the vendor
-            (also a content item) that posted the recipe. <a href="#taxonomy-term">Taxonomy term</a> fields are also
-            reference fields. See <a href="/docs/user_guide/en/structure-reference-fields.html">Section&nbsp;6.4,
-                “Concept: Reference Fields”</a> for more information.</p>
+            (also a content item) that posted the recipe. <a href="notes/appendices/glossary.html#taxonomy-term">Taxonomy
+                term</a> fields are also
+            reference fields. See <a target="_blank"
+                                     href="https://www.drupal.org/docs/user_guide/en/structure-reference-fields.html">Section&nbsp;6.4,
+                “Concept: Reference Fields”</a> for more information.
+        </blockquote>
 
         <h3>Region</h3>
-        <p>A defined area of a page where <a href="#content">content</a> can be placed, such as the header, footer, main
-            content area, left sidebar, etc. Regions are defined by <a href="#theme">themes</a>, and the content
-            displayed in each region is contained in <a href="#block">blocks</a>. See <a
-                    href="/docs/user_guide/en/block-regions.html">Section&nbsp;2.1, “Concept: Regions in a Theme”</a>
-            for more information.</p>
+        <blockquote>A defined area of a page where <a href="notes/appendices/glossary.html#content">content</a> can be
+            placed, such as the header, footer, main
+            content area, left sidebar, etc. Regions are defined by <a href="notes/appendices/glossary.html#theme">themes</a>,
+            and the content
+            displayed in each region is contained in <a href="notes/appendices/glossary.html#block">blocks</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/block-regions.html">Section&nbsp;2.1, “Concept:
+                Regions in a Theme”</a>
+            for more information.
+        </blockquote>
 
         <h3>Responsive</h3>
-        <p>A site or <a href="#theme">theme</a> is said to be responsive if it adjusts its presentation in response to
-            the size of the browser screen, printer, or other media output type. See also <a href="#breakpoint">Breakpoint</a>.
-            See <a href="/docs/user_guide/en/structure-image-responsive.html">Section&nbsp;6.14, “Concept: Responsive
-                Image Styles”</a> for more information.</p>
+        <blockquote>A site or <a href="notes/appendices/glossary.html#theme">theme</a> is said to be responsive if it
+            adjusts its presentation in response to
+            the size of the browser screen, printer, or other media output type. See also <a
+                    href="notes/appendices/glossary.html#breakpoint">Breakpoint</a>.
+            See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-image-responsive.html">Section&nbsp;6.14,
+                “Concept: Responsive
+                Image Styles”</a> for more information.
+        </blockquote>
 
         <h3>Revision</h3>
-        <p>A record of the past or present state of a <a href="#content">content</a> <a href="#entity">entity</a>, as it
-            is edited over time. See <a href="/docs/user_guide/en/planning-workflow.html">Section&nbsp;2.6, “Concept:
-                Editorial Workflow”</a> for more information.</p>
+        <blockquote>A record of the past or present state of a <a
+                href="notes/appendices/glossary.html#content">content</a> <a
+                href="notes/appendices/glossary.html#entity">entity</a>, as it
+            is edited over time. See <a target="_blank"
+                                        href="https://www.drupal.org/docs/user_guide/en/planning-workflow.html">Section&nbsp;2.6,
+                “Concept:
+                Editorial Workflow”</a> for more information.
+        </blockquote>
 
         <h3>Role</h3>
-        <p>A named set of <a href="#permission">permissions</a> that can be applied to a <a href="#user">user
-            account</a>. See <a href="/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept: Users, Roles,
-            and Permissions”</a> for more information.</p>
+        <blockquote>A named set of <a href="notes/appendices/glossary.html#permission">permissions</a> that can be
+            applied to a <a href="notes/appendices/glossary.html#user">user
+                account</a>. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/user-concept.html">Section&nbsp;7.1,
+                “Concept: Users, Roles,
+                and Permissions”</a> for more information.
+        </blockquote>
 
         <h2>S</h2>
 
         <h3>Security update</h3>
-        <p>An <a href="#update">update</a> that fixes a security-related bug, such as a hacking vulnerability. See <a
-                href="/docs/user_guide/en/security-concept.html">Section&nbsp;13.3, “Concept: Security and Regular
-            Updates”</a> for more information.</p>
+        <blockquote>An <a href="notes/appendices/glossary.html#update">update</a> that fixes a security-related bug,
+            such as a hacking vulnerability. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/security-concept.html">Section&nbsp;13.3, “Concept:
+                Security and Regular
+                Updates”</a> for more information.
+        </blockquote>
 
         <h3>State</h3>
-        <p>Information of a temporary nature about the current state of your site, such as the time when <a
-                href="#cron">cron</a> was last run, etc. See also <a href="#content">Content</a> and <a
-                href="#configuration">Configuration</a>. See <a href="/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5,
-            “Concept: Types of Data”</a> for more information.</p>
+        <blockquote>Information of a temporary nature about the current state of your site, such as the time when <a
+                href="#cron">cron</a> was last run, etc. See also <a href="notes/appendices/glossary.html#content">Content</a>
+            and <a
+                    href="#configuration">Configuration</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5,
+                “Concept: Types of Data”</a> for more information.
+        </blockquote>
 
         <h2>T</h2>
 
         <h3>Taxonomy</h3>
-        <p>The process of classifying <a href="#content">content</a>. See <a
-                href="/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5, “Concept: Taxonomy”</a> for more
-            information.</p>
+        <blockquote>The process of classifying <a href="notes/appendices/glossary.html#content">content</a>. See <a
+                href="https://www.drupal.org/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5, “Concept:
+            Taxonomy”</a> for more
+            information.
+        </blockquote>
 
         <h3>Taxonomy term</h3>
-        <p>A term used to classify <a href="#content">content</a>, such as a tag or a category. See also <a
-                href="#vocabulary">Vocabulary</a>. See <a href="/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5,
-            “Concept: Taxonomy”</a> for more information.</p>
+        <blockquote>A term used to classify <a href="notes/appendices/glossary.html#content">content</a>, such as a tag
+            or a category. See also <a
+                    href="#vocabulary">Vocabulary</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5,
+                “Concept: Taxonomy”</a> for more information.
+        </blockquote>
 
         <h3>Text format</h3>
-        <p><a href="#configuration">Configuration</a> that defines the processing that happens to user-entered text
+        <blockquote><a href="notes/appendices/glossary.html#configuration">Configuration</a> that defines the processing
+            that happens to user-entered text
             before it is shown in the browser. This might include stripping or limiting HTML tags, or turning URLs into
-            links. See <a href="/docs/user_guide/en/structure-text-formats.html">Section&nbsp;6.15, “Concept: Text
-                Formats and Editors”</a> for more information.</p>
+            links. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-text-formats.html">Section&nbsp;6.15,
+                “Concept: Text
+                Formats and Editors”</a> for more information.
+        </blockquote>
 
         <h3>Theme</h3>
-        <p>Software and asset files (images, CSS, PHP code, and/or templates) that determine the style and layout of the
-            site. The Drupal project distinguishes between <em><a href="#drupal-core">core</a></em> and <em><a
+        <blockquote>Software and asset files (images, CSS, PHP code, and/or templates) that determine the style and
+            layout of the
+            site. The Drupal project distinguishes between <em><a
+                    href="notes/appendices/glossary.html#drupal-core">core</a></em> and <em><a
                     href="#contributed">contributed</a></em> themes. See <a
-                    href="/docs/user_guide/en/understanding-themes.html">Section&nbsp;1.3, “Concept: Themes”</a> for
-            more information.</p>
+                    href="https://www.drupal.org/docs/user_guide/en/understanding-themes.html">Section&nbsp;1.3,
+                “Concept: Themes”</a> for
+            more information.
+        </blockquote>
 
         <h2>U</h2>
 
         <h3>UI</h3>
-        <p>Acronym for <a href="#user-interface"><em>User Interface</em></a>.</p>
+        <blockquote>Acronym for <a href="notes/appendices/glossary.html#user-interface"><em>User Interface</em></a>.
+        </blockquote>
 
         <h3>Update</h3>
-        <p>A newer version of your site’s software, either <a href="#drupal-core">Drupal core</a> or a <a
-                href="#module">module</a> or <a href="#theme">theme</a>. See also <a href="#security-update">Security
-            update</a>. See <a href="/docs/user_guide/en/security-concept.html">Section&nbsp;13.3, “Concept: Security
-            and Regular Updates”</a> for more information.</p>
+        <blockquote>A newer version of your site’s software, either <a
+                href="notes/appendices/glossary.html#drupal-core">Drupal core</a> or a <a
+                href="#module">module</a> or <a href="notes/appendices/glossary.html#theme">theme</a>. See also <a
+                href="notes/appendices/glossary.html#security-update">Security
+            update</a>. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/security-concept.html">Section&nbsp;13.3,
+            “Concept: Security
+            and Regular Updates”</a> for more information.
+        </blockquote>
 
         <h3>User</h3>
-        <p>A person interacting with the site, either logged-in or <a href="#anonymous">anonymous</a>. See <a
-                href="/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept: Users, Roles, and
-            Permissions”</a> for more information.</p>
+        <blockquote>A person interacting with the site, either logged-in or <a
+                href="notes/appendices/glossary.html#anonymous">anonymous</a>. See <a
+                href="https://www.drupal.org/docs/user_guide/en/user-concept.html">Section&nbsp;7.1, “Concept: Users,
+            Roles, and
+            Permissions”</a> for more information.
+        </blockquote>
 
         <h3>User interface</h3>
-        <p>The text, styles, and images that are visible on a site, separated logically into the user interface for site
-            visitors and the administrative user interface.</p>
+        <blockquote>The text, styles, and images that are visible on a site, separated logically into the user interface
+            for site
+            visitors and the administrative user interface.
+        </blockquote>
 
         <h3>User one (User 1)</h3>
-        <p>The initial <a href="#user">user</a> account that is created when you install the site (whose ID number is
-            1). It automatically has all <a href="#permission">permissions</a>, even if it is not assigned an
-            administrative <a href="#role">role</a>. See <a href="/docs/user_guide/en/user-admin-account.html">Section&nbsp;7.2,
-                “Concept: The User 1 Account”</a> for more information.</p>
+        <blockquote>The initial <a href="notes/appendices/glossary.html#user">user</a> account that is created when you
+            install the site (whose ID number is
+            1). It automatically has all <a href="notes/appendices/glossary.html#permission">permissions</a>, even if it
+            is not assigned an
+            administrative <a href="notes/appendices/glossary.html#role">role</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/user-admin-account.html">Section&nbsp;7.2,
+                “Concept: The User 1 Account”</a> for more information.
+        </blockquote>
 
         <h2>V</h2>
 
         <h3>View</h3>
-        <p>A formatted listing of data; typically, the data comes from <a href="#content">content</a> <a href="#entity">entities</a>.
-            For example, on a farmers market site, you might create a <a href="#content-item">content item</a> for each
+        <blockquote>A formatted listing of data; typically, the data comes from <a
+                href="notes/appendices/glossary.html#content">content</a> <a
+                href="notes/appendices/glossary.html#entity">entities</a>.
+            For example, on a farmers market site, you might create a <a
+                    href="notes/appendices/glossary.html#content-item">content item</a> for each
             vendor. You could then make view that generates a listing page that shows a thumbnail image and short
             description of each vendor, linking to the full-page content item. Using the same data, you could also make
             a view that generates a new vendors block, which would show information from the most recently added
-            vendors. See <a href="/docs/user_guide/en/planning-modular.html">Section&nbsp;2.4, “Concept: Modular
-                Content”</a> for more information.</p>
+            vendors. See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-modular.html">Section&nbsp;2.4,
+                “Concept: Modular
+                Content”</a> for more information.
+        </blockquote>
 
         <h3>View mode</h3>
-        <p>A set of <a href="#field-formatter">field formatter</a> <a href="#configuration">configuration</a> for all of
-            the <a href="#field">fields</a> of a <a href="#content">content</a> <a href="#entity">entity</a>, some of
-            which may be hidden. Each <a href="#entity-subtype">entity subtype</a> can have one or more view modes
-            defined; for example, <a href="#content-type">content types</a> typically have <em>Full</em> and
+        <blockquote>A set of <a href="notes/appendices/glossary.html#field-formatter">field formatter</a> <a
+                href="notes/appendices/glossary.html#configuration">configuration</a> for all of
+            the <a href="notes/appendices/glossary.html#field">fields</a> of a <a
+                    href="notes/appendices/glossary.html#content">content</a> <a
+                    href="notes/appendices/glossary.html#entity">entity</a>, some of
+            which may be hidden. Each <a href="notes/appendices/glossary.html#entity-subtype">entity subtype</a> can
+            have one or more view modes
+            defined; for example, <a href="notes/appendices/glossary.html#content-type">content types</a> typically have
+            <em>Full</em> and
             <em>Teaser</em> view modes, where the <em>Teaser</em> view mode displays fewer or trimmed-down fields. See
-            <a href="/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10, “Concept: View Modes and
-                Formatters”</a> for more information.</p>
+            <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10,
+                “Concept:
+                View Modes and
+                Formatters”</a> for more information.
+        </blockquote>
 
         <h3>Vocabulary</h3>
-        <p>A group of <a href="#taxonomy-term">taxonomy terms</a> to choose from when classifying <a href="#content">content</a>
+        <blockquote>A group of <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy terms</a> to choose from
+            when classifying <a href="notes/appendices/glossary.html#content">content</a>
             in a particular way, such as the list of all of the vendor categories on a farmers market site. Technically,
-            vocabularies are the <a href="#entity-subtype">entity subtype</a> for the taxonomy term <a
-                    href="#entity-type">entity type</a>. See <a href="/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5,
-                “Concept: Taxonomy”</a> for more information.</p>
+            vocabularies are the <a href="notes/appendices/glossary.html#entity-subtype">entity subtype</a> for the
+            taxonomy term <a
+                    href="#entity-type">entity type</a>. See <a
+                    href="https://www.drupal.org/docs/user_guide/en/structure-taxonomy.html">Section&nbsp;6.5,
+                “Concept: Taxonomy”</a> for more information.
+        </blockquote>
 
         <h2>W</h2>
 
         <h3>Widget</h3>
-        <p>See <a href="#field-widget">Field widget</a>.</p>
+        <blockquote>See <a href="notes/appendices/glossary.html#field-widget">Field widget</a>.</blockquote>
 
         <h3>Wizard</h3>
-        <p>A web form that allows you to fill in a few values, and creates something with sensible defaults based on the
-            values you chose. For example, there are wizards for creating <a href="#view">views</a> of different types.
-            See <a href="/docs/user_guide/en/views-create.html">Section&nbsp;9.3, “Creating a Content List View”</a> for
-            more information.</p>
+        <blockquote>A web form that allows you to fill in a few values, and creates something with sensible defaults
+            based on the
+            values you chose. For example, there are wizards for creating <a href="notes/appendices/glossary.html#view">views</a>
+            of different types.
+            See <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/views-create.html">Section&nbsp;9.3,
+                “Creating a
+                Content List View”</a> for
+            more information.
+        </blockquote>
 
         <h3>WYSIWYG</h3>
-        <p>Acronym for <em>What You See is What You Get</em>, meaning a method for editing <a
+        <blockquote>Acronym for <em>What You See is What You Get</em>, meaning a method for editing <a
                 href="#content">content</a> where what you see on the editing screen closely resembles the final
-            product. See <a href="/docs/user_guide/en/structure-text-format-config.html">Section&nbsp;6.16, “Configuring
-                Text Formats and Editors”</a> for more information.</p></article>
+            product. See <a target="_blank"
+                            href="https://www.drupal.org/docs/user_guide/en/structure-text-format-config.html">Section&nbsp;6.16,
+                “Configuring
+                Text Formats and Editors”</a> for more information.
+        </blockquote>
+    </article>
 </main>
 <script src="web/js/lib/require.js" type="text/javascript"></script>
 <script src="web/js/require-config.js" type="text/javascript"></script>

@@ -114,7 +114,7 @@
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">第
             1.5 章 “概念：数据类型”</a>。</p>
 
-        <h3>Content</h3>
+        <h3 id="content">Content - 内容</h3>
         <blockquote>
             Information meant to be displayed on your site, such as text, images, downloads, etc. See also <a
                 href="#configuration">Configuration</a> and <a href="notes/appendices/glossary.html#state">State</a>.
@@ -236,73 +236,100 @@
 
         <h2>E</h2>
 
-        <h3>Entity</h3>
-        <blockquote>An item of either <a href="notes/appendices/glossary.html#content">content</a> or <a
-                href="notes/appendices/glossary.html#configuration">configuration</a> data, although
-            in common usage, the term often refers to content entities. Examples include <a
-                    href="notes/appendices/glossary.html#content-item">content
-                items</a>, custom <a href="notes/appendices/glossary.html#block">blocks</a>, <a
-                    href="notes/appendices/glossary.html#taxonomy-term">taxonomy terms</a>, and
+        <h3 id="entity">Entity - 实体</h3>
+        <blockquote>
+            An item of either <a href="notes/appendices/glossary.html#content">content</a> or
+            <a href="notes/appendices/glossary.html#configuration">configuration</a> data, although
+            in common usage, the term often refers to content entities. Examples include
+            <a href="notes/appendices/glossary.html#content-item">content items</a>, custom
+            <a href="notes/appendices/glossary.html#block">blocks</a>,
+            <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy terms</a>, and
             definitions of <a href="notes/appendices/glossary.html#content-type">content types</a>; the first three are
-            content entities, and the last
-            is a configuration entity. See also <a href="notes/appendices/glossary.html#entity-type">Entity type</a>, <a
-                    href="notes/appendices/glossary.html#entity-subtype">Entity
-                subtype</a>, and <a href="notes/appendices/glossary.html#field">Field</a>. See <a
-                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and Fields”</a> for more information.
+            content entities, and the last is a configuration entity. See also
+            <a href="notes/appendices/glossary.html#entity-type">Entity type</a>,
+            <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a>, and
+            <a href="notes/appendices/glossary.html#field">Field</a>. See
+            <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept:
+                Content Entities and Fields”</a> for more information.
         </blockquote>
+        <p>一个 <a href="notes/appendices/glossary.html#content">内容</a> 或者
+            <a href="notes/appendices/glossary.html#configuration">配置</a>
+            的数据被称为实体，通常情况下指内容居多。示例中包括 <a href="notes/appendices/glossary.html#content-item">content item</a>、
+            自定义 <a href="notes/appendices/glossary.html#block">block</a>、
+            <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy term</a>，以及
+            <a href="notes/appendices/glossary.html#content-type">content type</a> 的定义，其中前三者属于内容实体，后者属于配置实体。
+            另见 <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a> 和
+            <a href="notes/appendices/glossary.html#field">Field</a>。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            2.3 章 “概念：内容实体和字段”</a>。</p>
 
         <h3>Entity subtype</h3>
-        <blockquote>Within a <a href="notes/appendices/glossary.html#content">content</a> <a
-                href="notes/appendices/glossary.html#entity-type">entity type</a>, a grouping of entities that
-            share the same <a href="notes/appendices/glossary.html#field">fields</a>. For example, within the <a
-                    href="notes/appendices/glossary.html#content-item">content item</a>
-            entity type, a farmers market site might have subtypes (known as <a
-                    href="notes/appendices/glossary.html#content-type">content types</a>)
+        <blockquote>
+            Within a <a href="notes/appendices/glossary.html#content">content</a>
+            <a href="notes/appendices/glossary.html#entity-type">entity type</a>, a grouping of entities that
+            share the same <a href="notes/appendices/glossary.html#field">fields</a>. For example, within the
+            <a href="notes/appendices/glossary.html#content-item">content item</a> entity type, a farmers market site
+            might have subtypes (known as <a href="notes/appendices/glossary.html#content-type">content types</a>)
             for static pages and vendor pages, each with its own group of fields. You may also see the term
-            <em>bundle</em> used (especially in programmer documentation) as a synonym of entity subtype. See <a
-                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and
-                Fields”</a> for more information.
+            <em>bundle</em> used (especially in programmer documentation) as a synonym of entity subtype. See
+            <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept:
+                Content Entities and Fields”</a> for more information.
         </blockquote>
+        <p>在一个<a href="notes/appendices/glossary.html#content">内容</a><a
+                href="notes/appendices/glossary.html#entity-type">实体类型</a>中，共享相同字段的一组实体。比如，在一个农贸市场
+            <a href="notes/appendices/glossary.html#content-item">content item</a>
+            的实体类型中，站点对静态页面和供应商页面设定不同的子类，每个子类都有自己的字段。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            2.3 章 “概念：内容实体和字段”</a>。</p>
 
         <h3>Entity type</h3>
-        <blockquote>The overall type of an <a href="notes/appendices/glossary.html#entity">entity</a>; in common usage,
+        <blockquote>
+            The overall type of an <a href="notes/appendices/glossary.html#entity">entity</a>; in common usage,
             it is only applied to a <a
-                    href="#content">content</a> entity. Examples include <a
-                    href="notes/appendices/glossary.html#content-type">content types</a>, <a
-                    href="#taxonomy-term">taxonomy terms</a>, and custom <a href="notes/appendices/glossary.html#block">blocks</a>.
-            See <a
-                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and
-                Fields”</a> for more information.
+                href="#content">content</a> entity. Examples include <a
+                href="notes/appendices/glossary.html#content-type">content types</a>, <a
+                href="#taxonomy-term">taxonomy terms</a>, and custom
+            <a href="notes/appendices/glossary.html#block">blocks</a>. See
+            <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+                “Concept: Content Entities and Fields”</a> for more information.
         </blockquote>
+        <p><a href="notes/appendices/glossary.html#entity">实体</a>的类型，通常指 <a
+                href="notes/appendices/glossary.html#content">内容</a> 实体。示例中包含 <a
+                href="notes/appendices/glossary.html#content-type">content type</a>、<a
+                href="#taxonomy-term">taxonomy term</a> 和自定义
+            <a href="notes/appendices/glossary.html#block">block</a>。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            2.3 章 “概念：内容实体和字段”</a>。</p>
 
         <h2>F</h2>
 
         <h3>Field</h3>
-        <blockquote>Data of a certain type that is attached to a <a href="notes/appendices/glossary.html#content">content</a>
+        <blockquote>
+            Data of a certain type that is attached to a <a href="notes/appendices/glossary.html#content">content</a>
             <a href="notes/appendices/glossary.html#entity">entity</a>. For
             instance, on a farmers market site’s vendor content type, you might have fields for an image, the vendor
             description, and a <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy term</a>. See <a
-                    href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
-                “Concept: Content Entities and
-                Fields”</a> for more information.
+                href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
+            “Concept: Content Entities and Fields”</a> for more information.
         </blockquote>
+        <p>内容实体的特定类型数据。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
+            2.3 章 “概念：内容实体和字段”</a>。</p>
 
         <h3>Field bundle</h3>
         <blockquote>Synonym for <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a>.</blockquote>
+        <p><a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a> 的同义词。</p>
 
         <h3>Field formatter</h3>
-        <blockquote><a href="notes/appendices/glossary.html#configuration">Configuration</a> that defines how the data
-            in a <a href="notes/appendices/glossary.html#field">field</a> is
-            displayed. For example, a text field could be displayed with a prefix and/or suffix, and it could have its
+        <blockquote>
+            <a href="notes/appendices/glossary.html#configuration">Configuration</a> that defines how the data in a
+            <a href="notes/appendices/glossary.html#field">field</a> is displayed. For example, a text field could be
+            displayed with a prefix and/or suffix, and it could have its
             HTML tags stripped out or limited. See also <a href="notes/appendices/glossary.html#view-mode">View mode</a>
             and <a href="notes/appendices/glossary.html#field-widget">Field
-                widget</a>. See <a target="_blank"
-                                   href="https://www.drupal.org/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10,
-                “Concept:
-                View Modes and Formatters”</a> for more information.
+            widget</a>. See
+            <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/structure-view-modes.html">Section&nbsp;6.10,
+                “Concept: View Modes and Formatters”</a> for more information.
         </blockquote>
 
         <h3>Field widget</h3>
@@ -320,26 +347,31 @@
         <blockquote>See <a href="notes/appendices/glossary.html#field-formatter">Field formatter</a>.</blockquote>
 
         <h3>FOSS</h3>
-        <blockquote>Acronym for <em>Free and Open Source Software</em>, meaning software that is developed by a
-            community of
-            people and released under a non-commercial license. See also <a href="notes/appendices/glossary.html#gpl">GPL</a>.
-            See <a
-                    href="https://www.drupal.org/docs/user_guide/en/understanding-project.html">Section&nbsp;1.6,
-                “Concept: The Drupal
-                Project”</a> for more information.
+        <blockquote>
+            Acronym for <em>Free and Open Source Software</em>, meaning software that is developed by a
+            community of people and released under a non-commercial license. See also
+            <a href="notes/appendices/glossary.html#gpl">GPL</a>. See
+            <a href="https://www.drupal.org/docs/user_guide/en/understanding-project.html">Section&nbsp;1.6, “Concept:
+                The Drupal Project”</a> for more information.
         </blockquote>
 
         <h2>G</h2>
 
         <h3>GPL</h3>
-        <blockquote>Acronym for the <em>GNU General Public License</em>, a non-commercial software license. All software
-            downloaded from the <a class="ulink" href="https://www.drupal.org" target="_top"><em>Drupal.org</em></a>
-            website is licensed under the <a class="ulink" href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"
-                                             target="_top">"GNU General Public License, version 2"</a>. See also <a
-                    href="#foss">FOSS</a>. See <a
-                    href="https://www.drupal.org/docs/user_guide/en/understanding-gpl.html">Section&nbsp;1.7,
+        <blockquote>
+            Acronym for the <em>General Public License</em>, a non-commercial software license. All software
+            downloaded from the <a href="https://www.drupal.org" target="_top"><em>Drupal.org</em></a>
+            website is licensed under the
+            <a target="_blank" href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">"GNU General Public License,
+                version 2"</a>. See also <a href="notes/appendices/glossary.html#foss">FOSS</a>. See
+            <a href="https://www.drupal.org/docs/user_guide/en/understanding-gpl.html">Section&nbsp;1.7,
                 “Concept: Drupal Licensing”</a> for more information.
         </blockquote>
+        <p><em>General Public License</em> 通用公共许可证的缩写，一种非商业软件许可证。从
+            <a href="https://www.drupal.org" target="_top">Drupal.org</a> 网站下载的所有软件均遵循
+            “GNU 通用公共许可证 第 2 版” 许可。另见 <a href="notes/appendices/glossary.html#foss">FOSS</a>。</p>
+        <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-gpl.html">第
+            1.7 章 “概念：Drupal 许可”</a>。</p>
 
         <h2>I</h2>
 

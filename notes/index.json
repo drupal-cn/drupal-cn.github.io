@@ -1,5 +1,15 @@
 [
     {
+        "title": "系统剖释",
+        "path": "notes/dig",
+        "children": [
+            {
+                "title": "目录结构",
+                "path": "notes/dig/directory-structure.html"
+            }
+        ]
+    },
+    {
         "title": "附录",
         "path": "notes/appendices",
         "children": [

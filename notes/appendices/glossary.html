@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <base href="/"/>
     <title>词汇表 - Drupal 开发笔记</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="Drupal, 开发, 笔记, 教程, 词汇, content, entity, profile, distribution"/>
     <link rel="shortcut icon" type="image/x-icon" href="web/images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="web/css/notes.css"/>
 </head>
@@ -121,7 +122,7 @@
             See <a href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">Section&nbsp;1.5, “Concept:
             Types of Data”</a> for more information.
         </blockquote>
-        <p>显示在网站的信息，比如文字、图片、下载资源等。另见 <a
+        <p>网站上展示的信息，比如文字、图片、下载资源等等。泛指【内容】这个概念。另见 <a
                 href="#configuration">Configuration</a> 及 <a href="notes/appendices/glossary.html#state">State</a>。</p>
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/understanding-data.html">第
             1.5 章 “概念：数据类型”</a>。</p>
@@ -134,8 +135,8 @@
                 href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
             “Concept: Content Entities and Fields”</a> for more information.
         </blockquote>
-        <p>一项<a href="notes/appendices/glossary.html#content">内容</a>通常是显示在页面上的主要部分，这是一种<a
-                href="notes/appendices/glossary.html#entity-type">实体类型</a>。</p>
+        <p>一个【content item】是页面上所展示的一个具体内容，而这个名词本身是一种实体类型【<a
+                href="notes/appendices/glossary.html#entity-type">entity type</a>】。</p>
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
             2.3 章 “概念：内容实体和字段”</a>。</p>
 
@@ -160,10 +161,8 @@
                 href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
             “Concept: Content Entities and Fields”</a> for more information.
         </blockquote>
-        <p>一个 <a href="notes/appendices/glossary.html#content-item">content item</a> 的 <a
-                href="notes/appendices/glossary.html#entity-type">entity type</a>（实体类型）的子类 <a
-                href="notes/appendices/glossary.html#entity-subtype">entity subtype</a>。每个 content type 都是为一类指定
-            内容创建的，有自己特有的字段。比如，一个站点会针对农贸市场设定一个 content type，而为供应商设定另一个 content type。</p>
+        <p>【content type】是指【content item】这个实体类型的分类。每个【content type】都有其特定用途，包含特有的字段。
+            比如，一个农贸市场网站会为普通页面和供应商列表页设置两个不同的【content type】。</p>
 
         <h3 id="contextual link">Contextual link - 上下文链接</h3>
         <blockquote>
@@ -252,14 +251,13 @@
             <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept:
                 Content Entities and Fields”</a> for more information.
         </blockquote>
-        <p>一个 <a href="notes/appendices/glossary.html#content">内容</a> 或者
-            <a href="notes/appendices/glossary.html#configuration">配置</a>
-            的数据被称为实体，通常情况下指内容居多。示例中包括 <a href="notes/appendices/glossary.html#content-item">content item</a>、
-            自定义 <a href="notes/appendices/glossary.html#block">block</a>、
-            <a href="notes/appendices/glossary.html#taxonomy-term">taxonomy term</a>，以及
-            <a href="notes/appendices/glossary.html#content-type">content type</a> 的定义，其中前三者属于内容实体，后者属于配置实体。
-            另见 <a href="notes/appendices/glossary.html#entity-subtype">Entity subtype</a> 和
-            <a href="notes/appendices/glossary.html#field">Field</a>。</p>
+        <p>一个【entity】就是一个具体的【<a href="notes/appendices/glossary.html#content">content</a>】或【<a
+                href="notes/appendices/glossary.html#configuration">configuration</a>】数据，通常是指内容。示例网站就包括【<a
+                href="notes/appendices/glossary.html#content-item">content item</a>】、 自定义【<a
+                href="notes/appendices/glossary.html#block">block</a>】、【<a
+                href="notes/appendices/glossary.html#taxonomy-term">taxonomy term</a>】和预设的【<a
+                href="notes/appendices/glossary.html#content-type">content type</a>】几种实体；其中前三者是内容实体，后者是配置实体。
+        </p>
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
             2.3 章 “概念：内容实体和字段”</a>。</p>
 
@@ -275,10 +273,10 @@
             <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3, “Concept:
                 Content Entities and Fields”</a> for more information.
         </blockquote>
-        <p>在一个<a href="notes/appendices/glossary.html#content">内容</a><a
-                href="notes/appendices/glossary.html#entity-type">实体类型</a>中，共享相同字段的一组实体。比如，在一个农贸市场
-            <a href="notes/appendices/glossary.html#content-item">content item</a>
-            的实体类型中，站点对静态页面和供应商页面设定不同的子类，每个子类都有自己的字段。</p>
+        <p>在一种【<a href="notes/appendices/glossary.html#entity-type">entity type</a>】当中，一组拥有相同字段的【<a
+                href="notes/appendices/glossary.html#entity">entity</a>】就属于一个【entity subtype】。比如在一个农贸市场网站中，
+            静态页面和供应商页面就分别对应【<a href="notes/appendices/glossary.html#content-item">content item</a>】这个【<a
+                    href="notes/appendices/glossary.html#entity-type">entity type</a>】当中的两个【entity subtype】。</p>
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
             2.3 章 “概念：内容实体和字段”</a>。</p>
 
@@ -293,11 +291,11 @@
             <a href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">Section&nbsp;2.3,
                 “Concept: Content Entities and Fields”</a> for more information.
         </blockquote>
-        <p><a href="notes/appendices/glossary.html#entity">实体</a>的类型，通常指 <a
-                href="notes/appendices/glossary.html#content">内容</a> 实体。示例中包含 <a
-                href="notes/appendices/glossary.html#content-type">content type</a>、<a
-                href="#taxonomy-term">taxonomy term</a> 和自定义
-            <a href="notes/appendices/glossary.html#block">block</a>。</p>
+        <p>【<a href="notes/appendices/glossary.html#entity">entity</a>】的类别，通常指<a
+                href="notes/appendices/glossary.html#content">内容</a>实体。示例网站中的实体类型就包括 【<a
+                href="notes/appendices/glossary.html#content-type">content type</a>】、【<a
+                href="#taxonomy-term">taxonomy term</a>】和自定义
+            【<a href="notes/appendices/glossary.html#block">block</a>】。</p>
         <p>详情请访问官网 <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/planning-data-types.html">第
             2.3 章 “概念：内容实体和字段”</a>。</p>
 

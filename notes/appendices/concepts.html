@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/"/>
+    <title>易混淆概念汇总 - Drupal 开发笔记</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="Drupal, 开发, 笔记, 教程, 概念, content, entity, profile, distribution"/>
+    <link rel="shortcut icon" type="image/x-icon" href="web/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="web/css/notes.css"/>
+</head>
+<body>
+<main>
+    <article>
+        <h1>易混淆概念汇总</h1>
+
+        <h2>Content 与 Entity</h2>
+
+        <p>首先上结论，后边再分述：</p>
+        <p>content item 是一种 entity type，具体的一个 content item 就是一个 entity，具体的某个 content type 就是一种 entity subtype。</p>
+
+        <h3>定义</h3>
+        <p>以下英文描述引用自【<a target="_blank" href="https://www.drupal.org/docs/user_guide/en/glossary.html">官网词汇表</a>】。</p>
+
+        <table class="list">
+            <tr>
+                <th>Content</th>
+                <td>
+                    <blockquote>
+                        Information meant to be displayed on your site, such as text, images, downloads, etc.
+                    </blockquote>
+                    <p>网站上展示的信息，比如文字、图片、下载资源等等。泛指【内容】这个概念。</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Content item</th>
+                <td>
+                    <blockquote>
+                        An item of content that is typically meant to be displayed as the main content of a page on your
+                        site. This is an entity type.
+                    </blockquote>
+                    <p>一个【content item】是页面上所展示的一个具体内容，而这个名词本身是一种实体类型【entity type】。</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Content type</th>
+                <td>
+                    <blockquote>
+                        An entity subtype for the content item entity type. Each content type is used for some
+                        particular purpose on the site, and each has its own fields. For example, a site for a farmers
+                        market might have a content type for simple pages, and another for a vendor listing page.
+                    </blockquote>
+                    <p>【content type】是指【content item】这个实体类型的分类。每个【content type】都有其特定用途，包含特有的字段。
+                        比如，一个农贸市场网站会为普通页面和供应商列表页设置两个不同的【content type】。</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Entity</th>
+                <td>
+                    <blockquote>
+                        An item of either content or configuration data, although in common usage, the term often refers
+                        to content entities. Examples include content items, custom blocks, taxonomy terms, and
+                        definitions of content types; the first three are content entities, and the last is a
+                        configuration entity.
+                    </blockquote>
+                    <p>一个【entity】就是一个具体的【content】或【configuration】数据，通常是指内容。示例网站就包括【content item】、
+                        自定义【block】、【taxonomy term】和预设的【content type】几种实体；其中前三者是内容实体，后者是配置实体。</p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <div>Entity type</div>
+                    <div>(Field bundle)</div>
+                </th>
+                <td>
+                    <blockquote>
+                        The overall type of an entity; in common usage, it is only applied to a content entity. Examples
+                        include content types, taxonomy terms, and custom blocks.
+                    </blockquote>
+                    <p>【entity】的类别。示例网站中的实体类型就包括【content type】、【taxonomy term】和自定义【block】。</p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <div>Entity subtype</div>
+                    <div>(Bundle)</div>
+                </th>
+                <td>
+                    <blockquote>
+                        Within a content entity type, a grouping of entities that share the same fields. For example,
+                        within the content item entity type, a farmers market site might have subtypes (known as content
+                        types) for static pages and vendor pages, each with its own group of fields. You may also see
+                        the term bundle used (especially in programmer documentation) as a synonym of entity subtype.
+                    </blockquote>
+                    <p>在一种【entity type】当中，一组拥有相同字段的【entity】就属于一个【entity subtype】。比如在一个农贸市场网站中，
+                        静态页面和供应商页面就分别对应【content item】这个【entity type】当中的两个【entity subtype】。</p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>示例说明</h3>
+
+        <p>下表引用自【<a href="https://www.drupal.org/zh-hans/docs/user_guide/zh-hans/planning-data-types.html">2.3. Concept:
+            Content Entities and Fields</a>】。</p>
+
+        <table>
+            <tr>
+                <th>Entity type</th>
+                <th>Entity sub-type</th>
+                <th>Defining Module</th>
+                <th>Main uses</th>
+            </tr>
+            <tr>
+                <td>Content item</td>
+                <td>Content type</td>
+                <td>Node module</td>
+                <td>Content intended to be the main page area for pages on the site
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> In the farmers market site
+                    example, you might have content
+                    types for basic pages, vendor pages, and recipe pages.
+                </td>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td>Comment type</td>
+                <td>Comment module</td>
+                <td>Commentary added to content entities (typically to Content item entities)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> On a blog site, blog posts might
+                    have comments. They are not
+                    needed in the farmers market site example.
+                </td>
+            </tr>
+            <tr>
+                <td>User profile</td>
+                <td>(none)</td>
+                <td>User module</td>
+                <td>Data related to a person with a user account (login access) on the site</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> Every site has at least basic
+                    user profiles with user names
+                    and email addresses; social networking sites may have more complex user
+                    profiles with more information.
+                </td>
+            </tr>
+            <tr>
+                <td>Custom block</td>
+                <td>Block type</td>
+                <td>Custom Block module</td>
+                <td>Text and images in smaller chunks, often displayed in the site header,
+                    footer, or sidebar
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> In the farmers market site
+                    example, you might put the hours
+                    and location in a sidebar block.
+                </td>
+            </tr>
+            <tr>
+                <td>Taxonomy term</td>
+                <td>Vocabulary</td>
+                <td>Taxonomy module</td>
+                <td>Used to classify other types of content</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> In the farmers market site
+                    example, you might classify Recipe
+                    content with an Ingredients taxonomy vocabulary, with taxonomy terms like
+                    Carrots and Tomatoes. In a blogging site, blog posts might be classified
+                    using a Tags vocabulary, and perhaps also a Categories vocabulary.
+                </td>
+            </tr>
+            <tr>
+                <td>File</td>
+                <td>(none)</td>
+                <td>File module</td>
+                <td>An image or attachment file that is tracked and managed by the site,
+                    often
+                    attached to other types of content
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> In the farmers market site
+                    example, both Recipe and Vendor
+                    pages might have image attachments, which would (behind the scenes) be
+                    managed as File entities by the site.
+                </td>
+            </tr>
+            <tr>
+                <td>Contact form</td>
+                <td>Form type</td>
+                <td>Contact module</td>
+                <td>A form that lets site visitors contact site owners</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><strong>Example:</strong> A contact form is needed in the
+                    farmers market site example.
+                </td>
+            </tr>
+        </table>
+
+        <h2>Profile 与 Distribution</h2>
+
+        <h3>定义</h3>
+        <p>以下英文描述引用自【<a target="_blank" href="https://www.drupal.org/docs/user_guide/en/glossary.html">官网词汇表</a>】。</p>
+
+        <table class="resource">
+            <tr>
+                <th>Profile</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Distribution</th>
+                <td>
+                    <blockquote>
+                        Distributions provide site features and functions for a specific type of site as a single
+                        download containing the core software, contributed modules, themes, and pre-defined
+                        configuration. A distribution makes it possible to set up a complex site for a specific purpose,
+                        in fewer steps than installing and configuring elements individually.
+                    </blockquote>
+                </td>
+            </tr>
+        </table>
+
+    </article>
+</main>
+<script src="web/js/lib/require.js" type="text/javascript"></script>
+<script src="web/js/require-config.js" type="text/javascript"></script>
+<script src="web/js/notes.js" type="text/javascript"></script>
+</body>
+</html>

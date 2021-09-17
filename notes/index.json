@@ -8,6 +8,10 @@
                 "path": "/"
             },
             {
+                "title": "易混淆概念汇总",
+                "path": "notes/appendices/concepts.html"
+            },
+            {
                 "title": "词汇表",
                 "path": "notes/appendices/glossary.html"
             }

@@ -213,28 +213,44 @@
             </tr>
         </table>
 
-        <h2>Distribution 与 Profile</h2>
+        <h2>Distribution 与 Installation Profile</h2>
 
         <h3>定义</h3>
-        <p>以下英文描述引用自【<a target="_blank" href="https://www.drupal.org/docs/user_guide/en/glossary.html">官网词汇表</a>】。</p>
+        <p>以下英文描述引用自
+            【<a target="_blank" href="https://www.drupal.org/docs/7/distributions/introduction-to-distributions">Introduction
+                to distributions</a>】。</p>
 
         <table class="list">
             <tr>
                 <th>Distribution</th>
                 <td>
                     <blockquote>
-                        Distributions provide site features and functions for a specific type of site as a single
-                        download containing the core software, contributed modules, themes, and pre-defined
-                        configuration. A distribution makes it possible to set up a complex site for a specific purpose,
-                        in fewer steps than installing and configuring elements individually.
+                        Distributions are full copies of Drupal that include Drupal Core, along with additional software
+                        such as themes, modules, libraries, and installation profiles. The automatic packaging scripts
+                        on Drupal.org turn installation profiles into distributions, by gathering all the modules,
+                        themes, and libraries they require into a single zip archive, so that all you need to do is
+                        download the full archive and run the install script.
                     </blockquote>
-                    <p>【Distribution】是为特定类型网站提供站点特性和功能的，包含核心组件、模块、主题和预定义配置的独立下载版本。
+                    <p>【Distribution】是为特定类型网站提供站点特性和功能的，包含核心组件、预定义模块、预定义主题和预定义配置的独立下载版本。
                         与重新安装和设置相比，使用【Distribution】可以更简单快速地构建特定类型的复杂站点。</p>
                 </td>
             </tr>
             <tr>
-                <th>Profile</th>
-                <td>【profile】是官方安装包中提供的安装选项，包括 Standard、Minimal、Demo 三项。</td>
+                <th>Installation Profile</th>
+                <td>
+                    <blockquote>
+                        Installation profiles are what a developer creates as the basis of distributions. They define
+                        installation steps (such as enabling modules, defining content types, etc.) that run after
+                        Drupal's base installation when you first install Drupal. One or more standard installation
+                        profiles are included in the Drupal Core download; developers can create custom profiles that
+                        set up Drupal for specific purposes, and optionally release them for community use on
+                        Drupal.org. It is not always easy to attempt to use an installation profile directly, if it
+                        requires non-core modules, themes, or libraries -- you would have to locate and download all the
+                        required components yourself before you could install Drupal. Instead, it's a lot easier to
+                        download a full distribution (if available).
+                    </blockquote>
+                    <p>【Installation profiles】简单来说就是一套仅包含标准安装文件和预定义配置的安装包，但配置中可能相关的第三方模块和主题却不在其中。</p>
+                </td>
             </tr>
         </table>
 
